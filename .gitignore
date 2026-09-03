@@ -5,7 +5,6 @@ __pycache__/
 .env
 logs/
 
-# Reddit text, not released (see README)
 final_sentiment_dataset.csv
 artifacts/datasets/
 artifacts/gemma_prompted*/records/
