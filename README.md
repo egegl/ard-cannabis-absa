@@ -8,7 +8,6 @@ class-weighted loss, five seeds per cell), against Gemma 4 31B prompted without
 fine-tuning (five sampling runs), on the same 96 held-out examples.
 
 ## Data
-
 The Reddit text is not distributed with this repository, in line with the
 paper's data statement. The following are therefore gitignored: the source
 dataset, the per-fold dataset CSVs (`artifacts/datasets/`), and the per-row
@@ -28,7 +27,6 @@ python generate.py build-datasets
 ```
 
 ## Setup
-
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
@@ -38,9 +36,6 @@ The Gemma comparison requires a newer Transformers release than the
 fine-tuning code and uses a separate environment (`requirements-gemma4.txt`).
 
 ## Pipeline
-
-Completed runs are skipped, so any command can be re-run on a checkout.
-
 Synthetic data generation (`gpt-5.4-mini-2026-03-17` through the Responses API,
 needs `OPENAI_API_KEY`; the paper's pools were produced with the same requests
 sent as a batch):
