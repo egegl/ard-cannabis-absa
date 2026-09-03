@@ -1,5 +1,4 @@
-Code and results for *Fine-Tuned and Prompted Models for Traditional and
-Aspect-Based Sentiment in Autoimmune Rheumatic Disease (ARD) Reddit Discussions*.
+Code and results for *Fine-Tuned and Prompted Models for Traditional and Aspect-Based Sentiment in Autoimmune Rheumatic Disease Reddit Communities*.
 
 The dataset contains 479 annotated examples from seven ARD subreddits, each
 labeled for traditional (whole-text) sentiment and for aspect-based sentiment
