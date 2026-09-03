@@ -83,36 +83,3 @@ a commit in `config.py`, which also holds the hyperparameters, seeds, and the
 two generation prompts. The classification prompts are in `gemma_eval.py`. All
 runs used NVIDIA H100 GPUs in bfloat16. The Slurm templates in `slurm/` need a
 partition and account for your cluster.
-
-## Results
-
-Macro-F1 on the 96 test examples, mean ± SD across five runs.
-
-| Model | Aspect-based | Traditional |
-|---|---:|---:|
-| DeBERTa, original, unweighted | 0.427 ± 0.017 | 0.496 ± 0.005 |
-| DeBERTa, original, weighted | 0.467 ± 0.040 | 0.740 ± 0.031 |
-| DeBERTa, generated, unweighted | 0.541 ± 0.020 | 0.764 ± 0.008 |
-| DeBERTa, generated, weighted | 0.536 ± 0.027 | 0.752 ± 0.010 |
-| Gemma 4 31B, prompted | 0.752 ± 0.006 | 0.610 ± 0.014 |
-
-Prespecified contrasts with 95% post-grouped bootstrap intervals are in
-`artifacts/results/contrasts_{absa,trad}.json`; the Gemma-vs-DeBERTa interval
-is in `artifacts/gemma_prompted_replicates/`.
-
-## Repository layout
-
-```
-config.py               constants, model pins, hyperparameters, generation prompts
-prepare.py              split, real folds, class weights
-generate.py             synthetic posts, augmented training sets
-synth_checks.py         acceptance checks for generated posts
-train.py                DeBERTa fine-tuning
-metrics.py              metrics, post-grouped bootstrap, paired contrasts
-run_models.py           sweep, baselines, selection, test, collect
-gemma_eval.py           prompted Gemma 4 classifier
-gemma_contrast.py       Gemma vs. best DeBERTa condition
-manuscript_figures/     figure generation
-slurm/                  job templates
-artifacts/              split, class weights, pools, results, Gemma runs
-```
