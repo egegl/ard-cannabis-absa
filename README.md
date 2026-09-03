@@ -1,9 +1,7 @@
-# ard-cannabis-sentiment
-
 Code and results for *Fine-Tuned and Prompted Models for Traditional and
 Aspect-Based Sentiment in Autoimmune Rheumatic Disease (ARD) Reddit Discussions*.
 
-The corpus contains 479 annotated examples from seven ARD subreddits, each
+The dataset contains 479 annotated examples from seven ARD subreddits, each
 labeled for traditional (whole-text) sentiment and for aspect-based sentiment
 toward a cannabis term. We compare fine-tuned DeBERTa classifiers, trained in
 a 2×2 design (original vs. LLM-augmented training data, unweighted vs.
@@ -14,7 +12,7 @@ fine-tuning (five sampling runs), on the same 96 held-out examples.
 
 The Reddit text is not distributed with this repository, in line with the
 paper's data statement. The following are therefore gitignored: the source
-corpus, the per-fold dataset CSVs (`artifacts/datasets/`), and the per-row
+dataset, the per-fold dataset CSVs (`artifacts/datasets/`), and the per-row
 Gemma response records (`artifacts/gemma_prompted*/records/`). The Gemma
 prediction CSVs omit the `input_text` and `explanation` columns.
 
@@ -22,7 +20,7 @@ All other artifacts are included: the post-level split, class weights, the
 generated posts, per-run metrics, per-instance predictions, summaries, and
 bootstrap contrasts.
 
-Given the corpus file (`final_sentiment_dataset.csv`) in the repository root,
+Given the dataset file (`final_sentiment_dataset.csv`) in the repository root,
 the withheld files are rebuilt with:
 
 ```bash
