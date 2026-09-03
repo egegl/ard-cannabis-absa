@@ -1,0 +1,54 @@
+{
+  "condition": "baseline::tfidf_logreg::real_unweighted",
+  "metrics": {
+    "accuracy": 0.65625,
+    "balanced_accuracy": 0.358974358974359,
+    "confusion_matrix": [
+      [
+        61,
+        0,
+        0
+      ],
+      [
+        24,
+        2,
+        0
+      ],
+      [
+        9,
+        0,
+        0
+      ]
+    ],
+    "fixed_macro_f1": 0.30998463901689705,
+    "n": 96,
+    "per_class": {
+      "0": {
+        "f1": 0.7870967741935484,
+        "precision": 0.648936170212766,
+        "recall": 1.0,
+        "support": 61
+      },
+      "1": {
+        "f1": 0.14285714285714285,
+        "precision": 1.0,
+        "recall": 0.07692307692307693,
+        "support": 26
+      },
+      "2": {
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "support": 9
+      }
+    },
+    "weighted_f1": 0.5388248847926268
+  },
+  "model_seed": 123,
+  "n_synthetic": 0,
+  "n_train": 335,
+  "phase": "test",
+  "prediction_file": "results/predictions/test__absa__baseline-tfidf_logreg-real_unweighted__t0__s123.csv",
+  "target": 0,
+  "task": "absa"
+}

@@ -1,0 +1,54 @@
+{
+  "condition": "real_weighted",
+  "metrics": {
+    "accuracy": 0.625,
+    "balanced_accuracy": 0.5234225398159825,
+    "confusion_matrix": [
+      [
+        40,
+        16,
+        5
+      ],
+      [
+        5,
+        18,
+        3
+      ],
+      [
+        3,
+        4,
+        2
+      ]
+    ],
+    "fixed_macro_f1": 0.5023237566393047,
+    "n": 96,
+    "per_class": {
+      "0": {
+        "f1": 0.7339449541284404,
+        "precision": 0.8333333333333334,
+        "recall": 0.6557377049180327,
+        "support": 61
+      },
+      "1": {
+        "f1": 0.5625,
+        "precision": 0.47368421052631576,
+        "recall": 0.6923076923076923,
+        "support": 26
+      },
+      "2": {
+        "f1": 0.21052631578947367,
+        "precision": 0.2,
+        "recall": 0.2222222222222222,
+        "support": 9
+      }
+    },
+    "weighted_f1": 0.6384414483743763
+  },
+  "model_seed": 2024,
+  "n_synthetic": 0,
+  "n_train": 335,
+  "phase": "test",
+  "prediction_file": "results/predictions/test__absa__real_weighted__t0__s2024.csv",
+  "target": 0,
+  "task": "absa"
+}

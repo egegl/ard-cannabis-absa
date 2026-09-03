@@ -1,0 +1,54 @@
+{
+  "condition": "augmented_unweighted",
+  "metrics": {
+    "accuracy": 0.7083333333333334,
+    "balanced_accuracy": 0.5614316239316239,
+    "confusion_matrix": [
+      [
+        26,
+        5,
+        1
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        5,
+        1,
+        7
+      ]
+    ],
+    "fixed_macro_f1": 0.5555555555555555,
+    "n": 48,
+    "per_class": {
+      "0": {
+        "f1": 0.8,
+        "precision": 0.7878787878787878,
+        "recall": 0.8125,
+        "support": 32
+      },
+      "1": {
+        "f1": 0.2,
+        "precision": 0.14285714285714285,
+        "recall": 0.3333333333333333,
+        "support": 3
+      },
+      "2": {
+        "f1": 0.6666666666666666,
+        "precision": 0.875,
+        "recall": 0.5384615384615384,
+        "support": 13
+      }
+    },
+    "weighted_f1": 0.7263888888888889
+  },
+  "model_seed": 42,
+  "n_synthetic": 83,
+  "n_train": 418,
+  "phase": "val",
+  "prediction_file": "results/predictions/val__trad__augmented_unweighted__t100__s42.csv",
+  "target": 100,
+  "task": "trad"
+}

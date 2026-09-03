@@ -1,0 +1,54 @@
+{
+  "condition": "baseline::stratified_random",
+  "metrics": {
+    "accuracy": 0.4166666666666667,
+    "balanced_accuracy": 0.2540064102564103,
+    "confusion_matrix": [
+      [
+        17,
+        2,
+        13
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        10,
+        0,
+        3
+      ]
+    ],
+    "fixed_macro_f1": 0.25176121616611047,
+    "n": 48,
+    "per_class": {
+      "0": {
+        "f1": 0.5483870967741935,
+        "precision": 0.5666666666666667,
+        "recall": 0.53125,
+        "support": 32
+      },
+      "1": {
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "support": 3
+      },
+      "2": {
+        "f1": 0.20689655172413793,
+        "precision": 0.1875,
+        "recall": 0.23076923076923078,
+        "support": 13
+      }
+    },
+    "weighted_f1": 0.42162588060808304
+  },
+  "model_seed": 123,
+  "n_synthetic": 0,
+  "n_train": 335,
+  "phase": "val",
+  "prediction_file": "results/predictions/val__trad__baseline-stratified_random__t0__s123.csv",
+  "target": 0,
+  "task": "trad"
+}

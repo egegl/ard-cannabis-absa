@@ -1,0 +1,54 @@
+{
+  "condition": "augmented_weighted",
+  "metrics": {
+    "accuracy": 0.7916666666666666,
+    "balanced_accuracy": 0.8264143264143264,
+    "confusion_matrix": [
+      [
+        52,
+        6,
+        5
+      ],
+      [
+        0,
+        7,
+        0
+      ],
+      [
+        8,
+        1,
+        17
+      ]
+    ],
+    "fixed_macro_f1": 0.7401761517615176,
+    "n": 96,
+    "per_class": {
+      "0": {
+        "f1": 0.8455284552845529,
+        "precision": 0.8666666666666667,
+        "recall": 0.8253968253968254,
+        "support": 63
+      },
+      "1": {
+        "f1": 0.6666666666666666,
+        "precision": 0.5,
+        "recall": 1.0,
+        "support": 7
+      },
+      "2": {
+        "f1": 0.7083333333333334,
+        "precision": 0.7727272727272727,
+        "recall": 0.6538461538461539,
+        "support": 26
+      }
+    },
+    "weighted_f1": 0.7953294376693768
+  },
+  "model_seed": 123,
+  "n_synthetic": 565,
+  "n_train": 900,
+  "phase": "test",
+  "prediction_file": "results/predictions/test__trad__augmented_weighted__t300__s123.csv",
+  "target": 300,
+  "task": "trad"
+}

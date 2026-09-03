@@ -1,0 +1,17 @@
+{
+  "selection": {
+    "best_mean_val_f1": 0.604127159599712,
+    "mean_val_f1_by_target": {
+      "100": 0.5108077245492356,
+      "200": 0.604127159599712,
+      "300": 0.4928784490524283,
+      "400": 0.5247140448178259,
+      "500": 0.4902322204723335
+    },
+    "rule": "smallest target within tie_tolerance of the best mean (unweighted augmented arm, validation only)",
+    "selected_mean_val_f1": 0.604127159599712,
+    "selected_target": 200,
+    "tie_tolerance": 0.005
+  },
+  "task": "absa"
+}

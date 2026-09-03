@@ -1,0 +1,54 @@
+{
+  "condition": "baseline::always_neutral",
+  "metrics": {
+    "accuracy": 0.6354166666666666,
+    "balanced_accuracy": 0.3333333333333333,
+    "confusion_matrix": [
+      [
+        61,
+        0,
+        0
+      ],
+      [
+        26,
+        0,
+        0
+      ],
+      [
+        9,
+        0,
+        0
+      ]
+    ],
+    "fixed_macro_f1": 0.25902335456475584,
+    "n": 96,
+    "per_class": {
+      "0": {
+        "f1": 0.7770700636942676,
+        "precision": 0.6354166666666666,
+        "recall": 1.0,
+        "support": 61
+      },
+      "1": {
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "support": 26
+      },
+      "2": {
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "support": 9
+      }
+    },
+    "weighted_f1": 0.49376326963906586
+  },
+  "model_seed": 0,
+  "n_synthetic": 0,
+  "n_train": 335,
+  "phase": "test",
+  "prediction_file": "results/predictions/test__absa__baseline-always_neutral__t0__s0.csv",
+  "target": 0,
+  "task": "absa"
+}

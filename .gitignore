@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv*/
+.DS_Store
+.env
+logs/
+
+# Reddit text, not released (see README)
+final_sentiment_dataset.csv
+artifacts/datasets/
+artifacts/gemma_prompted*/records/

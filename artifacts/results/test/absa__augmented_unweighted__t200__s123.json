@@ -1,0 +1,54 @@
+{
+  "condition": "augmented_unweighted",
+  "metrics": {
+    "accuracy": 0.65625,
+    "balanced_accuracy": 0.5125402830320863,
+    "confusion_matrix": [
+      [
+        50,
+        5,
+        6
+      ],
+      [
+        12,
+        10,
+        4
+      ],
+      [
+        4,
+        2,
+        3
+      ]
+    ],
+    "fixed_macro_f1": 0.5084150422000633,
+    "n": 96,
+    "per_class": {
+      "0": {
+        "f1": 0.7874015748031497,
+        "precision": 0.7575757575757576,
+        "recall": 0.819672131147541,
+        "support": 61
+      },
+      "1": {
+        "f1": 0.46511627906976744,
+        "precision": 0.5882352941176471,
+        "recall": 0.38461538461538464,
+        "support": 26
+      },
+      "2": {
+        "f1": 0.2727272727272727,
+        "precision": 0.23076923076923078,
+        "recall": 0.3333333333333333,
+        "support": 9
+      }
+    },
+    "weighted_f1": 0.6518652580557451
+  },
+  "model_seed": 123,
+  "n_synthetic": 277,
+  "n_train": 612,
+  "phase": "test",
+  "prediction_file": "results/predictions/test__absa__augmented_unweighted__t200__s123.csv",
+  "target": 200,
+  "task": "absa"
+}

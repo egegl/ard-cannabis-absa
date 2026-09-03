@@ -1,0 +1,19 @@
+{
+  "task": "absa",
+  "a": "gemma_prompted",
+  "b": "deberta::augmented_unweighted::t200",
+  "per_seed_delta": {
+    "rep0_vs_seed42": 0.20844248973012158,
+    "rep1_vs_seed7": 0.18546424861109212,
+    "rep2_vs_seed123": 0.20670269148859544,
+    "rep3_vs_seed2024": 0.2384117846267636,
+    "rep4_vs_seed99": 0.21655154486036843
+  },
+  "mean_delta": 0.2111145518633882,
+  "sd_delta": 0.019100015015259555,
+  "boot_mean_delta": 0.21005228545925697,
+  "ci_2.5": 0.05245707318423157,
+  "ci_97.5": 0.3512534795228478,
+  "replicates": 10000,
+  "seed": 42
+}

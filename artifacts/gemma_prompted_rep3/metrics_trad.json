@@ -1,0 +1,51 @@
+{
+  "accuracy": 0.6666666666666666,
+  "confusion_matrix": [
+    [
+      34,
+      14,
+      15
+    ],
+    [
+      0,
+      7,
+      0
+    ],
+    [
+      2,
+      1,
+      23
+    ]
+  ],
+  "confusion_matrix_orientation": "rows=true label; columns=predicted label; order=0,1,2",
+  "macro_f1": 0.6294591025194474,
+  "micro_f1": 0.6666666666666666,
+  "n": 96,
+  "per_class": {
+    "0": {
+      "f1": 0.6868686868686869,
+      "name": "neutral",
+      "precision": 0.9444444444444444,
+      "predicted_count": 36,
+      "recall": 0.5396825396825397,
+      "support": 63
+    },
+    "1": {
+      "f1": 0.4827586206896552,
+      "name": "positive",
+      "precision": 0.3181818181818182,
+      "predicted_count": 22,
+      "recall": 1.0,
+      "support": 7
+    },
+    "2": {
+      "f1": 0.71875,
+      "name": "negative",
+      "precision": 0.6052631578947368,
+      "predicted_count": 38,
+      "recall": 0.8846153846153846,
+      "support": 26
+    }
+  },
+  "task": "trad"
+}

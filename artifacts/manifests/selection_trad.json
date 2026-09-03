@@ -1,0 +1,17 @@
+{
+  "selection": {
+    "best_mean_val_f1": 0.6649089614089614,
+    "mean_val_f1_by_target": {
+      "100": 0.5923845540306508,
+      "200": 0.6058104507855612,
+      "300": 0.6649089614089614,
+      "400": 0.6284008838404954,
+      "500": 0.6390951341621902
+    },
+    "rule": "smallest target within tie_tolerance of the best mean (unweighted augmented arm, validation only)",
+    "selected_mean_val_f1": 0.6649089614089614,
+    "selected_target": 300,
+    "tie_tolerance": 0.005
+  },
+  "task": "trad"
+}

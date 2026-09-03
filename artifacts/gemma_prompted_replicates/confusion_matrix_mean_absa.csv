@@ -1,0 +1,4 @@
+true_label,pred_0_neutral,pred_1_positive,pred_2_negative
+0_neutral,39.0,20.0,2.0
+1_positive,0.2,25.8,0.0
+2_negative,1.0,1.0,7.0

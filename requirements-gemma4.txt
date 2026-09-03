@@ -1,0 +1,12 @@
+# separate venv: Gemma 4's thinking template needs transformers >= 5.10
+torch
+torchvision
+transformers==5.10.1
+accelerate
+safetensors
+sentencepiece
+protobuf
+numpy
+pandas
+scikit-learn
+matplotlib

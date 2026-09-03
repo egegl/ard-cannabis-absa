@@ -1,0 +1,54 @@
+{
+  "condition": "real_unweighted",
+  "metrics": {
+    "accuracy": 0.7708333333333334,
+    "balanced_accuracy": 0.4894179894179895,
+    "confusion_matrix": [
+      [
+        61,
+        0,
+        2
+      ],
+      [
+        7,
+        0,
+        0
+      ],
+      [
+        13,
+        0,
+        13
+      ]
+    ],
+    "fixed_macro_f1": 0.49378952122854564,
+    "n": 96,
+    "per_class": {
+      "0": {
+        "f1": 0.8472222222222222,
+        "precision": 0.7530864197530864,
+        "recall": 0.9682539682539683,
+        "support": 63
+      },
+      "1": {
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "support": 7
+      },
+      "2": {
+        "f1": 0.6341463414634146,
+        "precision": 0.8666666666666667,
+        "recall": 0.5,
+        "support": 26
+      }
+    },
+    "weighted_f1": 0.7277375508130081
+  },
+  "model_seed": 2024,
+  "n_synthetic": 0,
+  "n_train": 335,
+  "phase": "test",
+  "prediction_file": "results/predictions/test__trad__real_unweighted__t0__s2024.csv",
+  "target": 0,
+  "task": "trad"
+}
