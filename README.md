@@ -72,8 +72,7 @@ python manuscript_figures/figures.py
 ```
 
 Traditional sentiment fine-tunes `microsoft/deberta-v3-base`; aspect-based
-sentiment fine-tunes `yangheng/deberta-v3-base-absa-v1.1`. Both are pinned to
-a commit in `config.py`, which also holds the hyperparameters, seeds, and the
+sentiment fine-tunes `yangheng/deberta-v3-base-absa-v1.1`. Both are in `config.py`, which also holds the hyperparameters, seeds, and the
 two generation prompts. The classification prompts are in `gemma_eval.py`. All
 runs used NVIDIA H100 GPUs in bfloat16. The Slurm templates in `slurm/` need a
 partition and account for your cluster.
