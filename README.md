@@ -8,16 +8,6 @@ class-weighted loss, five seeds per cell), against Gemma 4 31B prompted without
 fine-tuning (five sampling runs), on the same 96 held-out examples.
 
 ## Data
-The Reddit text is not distributed with this repository, in line with the
-paper's data statement. The following are therefore gitignored: the source
-dataset, the per-fold dataset CSVs (`artifacts/datasets/`), and the per-row
-Gemma response records (`artifacts/gemma_prompted*/records/`). The Gemma
-prediction CSVs omit the `input_text` and `explanation` columns.
-
-All other artifacts are included: the post-level split, class weights, the
-generated posts, per-run metrics, per-instance predictions, summaries, and
-bootstrap contrasts.
-
 Given the dataset file (`final_sentiment_dataset.csv`) in the repository root,
 the withheld files are rebuilt with:
 
@@ -36,7 +26,7 @@ The Gemma comparison requires a newer Transformers release than the
 fine-tuning code and uses a separate environment (`requirements-gemma4.txt`).
 
 ## Pipeline
-Synthetic data generation (`gpt-5.4-mini-2026-03-17` through the Responses API,
+Synthetic data generation (`gpt-5.4-mini-2026-03-17` through the OpenAI API,
 needs `OPENAI_API_KEY`; the paper's pools were produced with the same requests
 sent as a batch):
 
@@ -56,7 +46,7 @@ python run_models.py baselines --phase test
 python run_models.py collect
 ```
 
-Prompted Gemma 4 and the Gemma-vs-DeBERTa contrast:
+Prompted Gemma 4 and the Gemma-DeBERTa comparison:
 
 ```bash
 GEMMA_MODEL_PATH=/path/to/gemma-4-31B-it sbatch --export=ALL,GEMMA_REPLICATE=0 slurm/gemma4.sbatch   # 0..4
@@ -71,8 +61,4 @@ Figures:
 python manuscript_figures/figures.py
 ```
 
-Traditional sentiment fine-tunes `microsoft/deberta-v3-base`; aspect-based
-sentiment fine-tunes `yangheng/deberta-v3-base-absa-v1.1`. Both are in `config.py`, which also holds the hyperparameters, seeds, and the
-two generation prompts. The classification prompts are in `gemma_eval.py`. All
-runs used NVIDIA H100 GPUs in bfloat16. The Slurm templates in `slurm/` need a
-partition and account for your cluster.
+`microsoft/deberta-v3-base` is fine-tuned for traditional sentiment, `yangheng/deberta-v3-base-absa-v1.1` for aspect-based sentiment. Both are in `config.py` which also has the hyperparameters, seeds, and the data generation prompts. The classification prompts are in `gemma_eval.py`. All experiments were run on NVIDIA H100 GPUs in bfloat16.
